@@ -17,7 +17,9 @@
    这个要考虑临界点。由于一个char占的2个字节，却被分给了两个文件，于是导致第一个文件最后一个字符出问题，并影响了后面的文件。
 
 3. fgets问题
+
       先看其实现：
+      
       char *fgets(char *s, int n,  FILE *stream)
       {
           register int c;
