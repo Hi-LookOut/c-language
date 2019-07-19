@@ -1,6 +1,6 @@
 # splitFile 
 
-## 写的是一个关于在window下使用fopen/fgets分割文件的demo。
+## 是一个关于在window下使用fopen/fgets分割文件的demo。
 #### 下面记录在写的过程中遇到了分割文件乱码的坑和解决的方法。
 ---
 
