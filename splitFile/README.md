@@ -15,6 +15,7 @@
 
       读的文件编码集与存储文件的编码集不对应。
        基础知识：https://blog.csdn.net/silently_frog/article/details/96494434（最好使用utf-8）
+       
       由于我读取的文件是格式是ANSI,而输出文件也必须是ANSI.除非手动转码。
       
 2. 最后一个字符乱码问题
