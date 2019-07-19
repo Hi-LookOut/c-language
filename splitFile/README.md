@@ -25,6 +25,7 @@
       char *fgets(char *s, int n,  FILE *stream)
       
       {
+      
           register int c;
           register char *cs;
           cs = s;
