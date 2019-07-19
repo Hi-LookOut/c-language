@@ -23,6 +23,7 @@
       先看其实现：
       
       char *fgets(char *s, int n,  FILE *stream)
+      
       {
           register int c;
           register char *cs;
