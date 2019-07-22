@@ -352,19 +352,39 @@ struct store
 //	system("pause");
 //}
 
+
+
 //别名typedef
 //typedef int i;
-//
 //typedef struct Man people;
-//
 //typedef struct Man* who;
-//
+// typedef int a[10];//int[10]
+// typedef void (*func)();//定义指针函数的别名fun
+// typedef int* func1;//定义int类型的指针别名func1
+// typedef int** PFun(int, char*);//定义int类型的二级指针
+
 //void main(){
 //
-//	int i = 10;
-//    people p = {12,123.0,"大狗"};
+//	i j = 10;
+//      printf("%d\n",j);
+
+//      people p = {12,123.0,"大狗"};
 //	who h= &p;
 //	printf("%#x----%d----%lf----%s\n", h, h->age, h->weight, h->name);
+
+// 	a b = {1,2,3,4,5,6,7,8,9,10};
+// 	int k = 0;
+// 	for (; k < (sizeof(b) / sizeof(int)); k++)
+// 	{ 
+// 	    printf("%d\n", k);
+// 	};
+
+// 	func f = fun1;
+// 	f();
+
+// 	func1 omg = &j;
+//      printf("%d\n", *omg);
+
 //	system("pause");
 //}
 
@@ -567,4 +587,6 @@ c语言执行流程
 //    #include "my.txt";
 //	system("pause");
 //}
+
+
 
