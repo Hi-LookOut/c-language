@@ -8,27 +8,27 @@
 
 
 
-//´òÓ¡º¯Êı
+//æ‰“å°å‡½æ•°
 void printMsg(char* flag, char* msg){
-	printf("flag%s\n", msg);
+	printf("%s-----%s\n",flag,msg);
 }
 
 
 
 void msg(char* content){
-	printf("Ö¸Õëµ÷ÓÃº¯ÊımsgÎª%s\n", content);
+	printf("æŒ‡é’ˆè°ƒç”¨å‡½æ•°msgä¸º%s\n", content);
 }
 
 int msg2(int content){
-	printf("Ö¸Õëµ÷ÓÃº¯Êımsg,ÎÒÃÇµÄ¿ÚºÅÊÇ%d\n", content);
+	printf("æŒ‡é’ˆè°ƒç”¨å‡½æ•°msg,æˆ‘ä»¬çš„å£å·æ˜¯%d\n", content);
 	return 0;
 }
 
 int msg3(void(*fun)(char*), char* str, int content){
-	printf("¸ß¼¶ÓÃ·¨");
+	printf("é«˜çº§ç”¨æ³•");
 	printf("%s\n", str);
-	printf("ÏÂÃæÊÇÎÒµ÷ÓÃµÄ");
-	fun("ÎÒ±»msg3µ÷ÓÃÁË");
+	printf("ä¸‹é¢æ˜¯æˆ‘è°ƒç”¨çš„");
+	fun("æˆ‘è¢«msg3è°ƒç”¨äº†");
 	return 0;
 }
 //void main(){
@@ -36,35 +36,35 @@ int msg3(void(*fun)(char*), char* str, int content){
 //	int *p = &i;
 //	int **j=NULL;
 //
-//	printf("iµÄÖµÎª£º%d\n", i);
-//	printf("iµÄµØÖ·Îª£º%#x\n", &i);
-//	printf("p´æ´¢µÄÄÚÈİÎª£º%#x\n", p);
-//	printf("pµÄµØÖ·Îª£º%#x\n", &p);
+//	printf("içš„å€¼ä¸ºï¼š%d\n", i);
+//	printf("içš„åœ°å€ä¸ºï¼š%#x\n", &i);
+//	printf("på­˜å‚¨çš„å†…å®¹ä¸ºï¼š%#x\n", p);
+//	printf("pçš„åœ°å€ä¸ºï¼š%#x\n", &p);
 //	*p = 200;
 //	printf("\n");
-//	//¶ş¼¶Ö¸ÕëµÄÔËÓÃ
+//	//äºŒçº§æŒ‡é’ˆçš„è¿ç”¨
 //	if (j == NULL)
 //	{
-//		printf("jÎª¿Õ\n");
+//		printf("jä¸ºç©º\n");
 //		j = &p;
-//		printf("jÄÃµ½pµÄµØÖ·£º%#x\n", j);
-//		printf("jÄÃµ½pµÄÄÚÈİµÄ£º%#x\n", *j);
+//		printf("jæ‹¿åˆ°pçš„åœ°å€ï¼š%#x\n", j);
+//		printf("jæ‹¿åˆ°pçš„å†…å®¹çš„ï¼š%#x\n", *j);
 //	}
 //	printf("\n");
-//	//Ö¸ÕëµÄÔËËã
+//	//æŒ‡é’ˆçš„è¿ç®—
 //	int arr[] = {123,345,789};
-//	printf("arrµÄµØÖ·£º%#x\n", arr);//µØÖ·
-//	printf("arrµÄµÚÒ»ÏîÖµ£º%d\n", *arr);//123
-//	printf("arrµÄµÚ¶şÏîÖµ£º%d\n", *(arr+1));//345
+//	printf("arrçš„åœ°å€ï¼š%#x\n", arr);//åœ°å€
+//	printf("arrçš„ç¬¬ä¸€é¡¹å€¼ï¼š%d\n", *arr);//123
+//	printf("arrçš„ç¬¬äºŒé¡¹å€¼ï¼š%d\n", *(arr+1));//345
 //	printf("\n");
-//	//Ö¸Õëº¯Êıµ÷ÓÃ,char*=string
+//	//æŒ‡é’ˆå‡½æ•°è°ƒç”¨,char*=string
 //	void (*f)(char*) = msg;
-//	f("ÎÒÊÇÖ¸Õë´ó¸ç£¬ÌıÎÒµ÷ÓÃ");
+//	f("æˆ‘æ˜¯æŒ‡é’ˆå¤§å“¥ï¼Œå¬æˆ‘è°ƒç”¨");
 //
 //	int(*fu)(int) = msg2;
 //	fu(123);
 //
-//	msg3(msg, "ÄãºÃ", 110);
+//	msg3(msg, "ä½ å¥½", 110);
 //	printf("\n");
 //	system("pause");//	getchar();
 //
@@ -72,23 +72,23 @@ int msg3(void(*fun)(char*), char* str, int content){
 
 
 
-//¶¯Ì¬·ÖÅä
-//¶Ñ·ÖÅä
+//åŠ¨æ€åˆ†é…
+//å †åˆ†é…
 void heapFun(){
 	int len = 0;
 	int* p = NULL;
-	printf("ÊäÈëÄãÒª¿ª±ÙµÄÄÚ´æ´óĞ¡:");
+	printf("è¾“å…¥ä½ è¦å¼€è¾Ÿçš„å†…å­˜å¤§å°:");
 	scanf("%d", &len);
 	if (len <= 0)
 	{
-		printf("ÄãÔÚÄÖ×ÅÍæµÄ°É");
+		printf("ä½ åœ¨é—¹ç€ç©çš„å§");
 		return;
 	}
 	else
 	{
 		p = (int*)malloc(len * sizeof(int));//40M
 		//p = (int*)calloc(len, sizeof(int));
-		//Ê¹ÓÃÄÚ´æ,ÏëÊı×é.
+		//ä½¿ç”¨å†…å­˜,æƒ³æ•°ç»„.
 		int i = 0;
 		for (; i < len; i++)
 		{
@@ -99,9 +99,9 @@ void heapFun(){
 	}
 
 	int addlen = 0;
-	printf("ÄãĞèÒªÔö¼ÓµÄÄÚ´æ´óĞ¡:");
+	printf("ä½ éœ€è¦å¢åŠ çš„å†…å­˜å¤§å°:");
 	scanf("%d", &addlen);
-	//ÖØĞÂ·ÖÅä,ÇÒÁ¬Ğø.(µ«ÊÇÔö¼ÓÄÚ´æÒÑ±»Õ¼ÓÃ,ÕâÖØĞÂÕÒÒ»¿é¶ÑÖĞÂú×ãlen+addlen´óĞ¡µÄÄÚ´æ¿é,²¢½«ËùÓĞÖµ¸³Öµµ½ĞÂÄÚ´æ¿é,²¢ÊÍ·ÅÒÔÇ°µÄÄÚ´æ¿é.)
+	//é‡æ–°åˆ†é…,ä¸”è¿ç»­.(ä½†æ˜¯å¢åŠ å†…å­˜å·²è¢«å ç”¨,è¿™é‡æ–°æ‰¾ä¸€å—å †ä¸­æ»¡è¶³len+addlenå¤§å°çš„å†…å­˜å—,å¹¶å°†æ‰€æœ‰å€¼èµ‹å€¼åˆ°æ–°å†…å­˜å—,å¹¶é‡Šæ”¾ä»¥å‰çš„å†…å­˜å—.)
 	int * p2 = (int*)realloc(p, sizeof(int)*(len + addlen));
 
 	int i = len;
@@ -117,10 +117,10 @@ void heapFun(){
 		printf("%#x---%d\n", &p2[i], p2[i]);
 	}
 
-	//·ÖÅäÄÚ´æºÃÏ°¹ß,²»½öÒªÊÍ·ÅÄÚ´æ,»¹Ó¦¸Ã½«Æä¸³ÖµÎªNULL
+	//åˆ†é…å†…å­˜å¥½ä¹ æƒ¯,ä¸ä»…è¦é‡Šæ”¾å†…å­˜,è¿˜åº”è¯¥å°†å…¶èµ‹å€¼ä¸ºNULL
 	if (p != NULL)
 	{
-		//ÊÖ¶¯ÊÍ·Å
+		//æ‰‹åŠ¨é‡Šæ”¾
 		free(p);
 		p = NULL;
 	}
@@ -131,7 +131,7 @@ void heapFun(){
 	}
 	else
 	{
-		printf("¶Ô²»Æğ,Ã»ÓĞÄãĞèÒªµÄ´óĞ¡µÄÄÚ´æ¿é.");
+		printf("å¯¹ä¸èµ·,æ²¡æœ‰ä½ éœ€è¦çš„å¤§å°çš„å†…å­˜å—.");
 	}
 	printf("\n");
 }
@@ -139,13 +139,13 @@ void heapFun(){
 
 
 
-//Õ»·ÖÅä
+//æ ˆåˆ†é…
 void stackFun(){
-	int a[1024 * 1024]; //±¨´íÄÚ´æÒç³ö
+	int a[1024 * 1024]; //æŠ¥é”™å†…å­˜æº¢å‡º
 	a[0] = 110;
 }
 
-//ÄÚ´æ·ÖÅämain
+//å†…å­˜åˆ†é…main
 //void main(){
 //
 //	//stackFun();
@@ -155,24 +155,24 @@ void stackFun(){
 
 
 
-//Ê¹ÓÃ×Ö·ûÊı×é´æ´¢×Ö·û´®
+//ä½¿ç”¨å­—ç¬¦æ•°ç»„å­˜å‚¨å­—ç¬¦ä¸²
 
 //void main(){
-//	//'\0'Îª½áÊø·û
+//	//'\0'ä¸ºç»“æŸç¬¦
 //	//char str[] = {'c','h','i','n','a','\0'};
 //	
 //	//char str[6] = { 'c', 'h', 'i', 'n', 'a'};
 //
 //
-//	//±ØĞë´óÓÚµÈÓÚ6
+//	//å¿…é¡»å¤§äºç­‰äº6
 //	//char str[6] = "china";
 //
-//	//ÓĞµã·½±ã,È±µã²»¿ÉÀ©³äºÍĞŞ¸Ä.ÆäÎªconst
+//	//æœ‰ç‚¹æ–¹ä¾¿,ç¼ºç‚¹ä¸å¯æ‰©å……å’Œä¿®æ”¹.å…¶ä¸ºconst
 //	char name[20] = "china";
 //	char *str = " that is good";
 //
 //	printf("%s\n",str);
-//	//ÎÄµµ£ºhttp://www.kuqin.com/clib/string/strcat.html
+//	//æ–‡æ¡£ï¼šhttp://www.kuqin.com/clib/string/strcat.html
 //	
 //	//strcat
 //	strcat(name,str);
@@ -186,25 +186,25 @@ void stackFun(){
 //	char *p=strchr(name,'i');
 //	if (p)
 //	{
-//		printf("iµÄÏÂ±êÊÇ:%d\n",p-name);
+//		printf("içš„ä¸‹æ ‡æ˜¯:%d\n",p-name);
 //	}
 //	else
 //	{
-//		printf("Ã»ÕÒµ½\n");
+//		printf("æ²¡æ‰¾åˆ°\n");
 //	}
 //	system("pause");
 //}
 
 
 
-//½á¹¹Ìå
+//ç»“æ„ä½“
 
 struct girl
 {
 	char *name;
 };
 
-//ÄäÃû½á¹¹Ìå
+//åŒ¿åç»“æ„ä½“
 struct
 {
 	char *name;
@@ -215,7 +215,7 @@ struct Man
 	double weight;
 	char* name;
 	struct girl wife;
-	//struct xm; ²»ÄÜÕâÃ´ÓÃ
+	//struct xm; ä¸èƒ½è¿™ä¹ˆç”¨
 }my, my2;
 
 struct arr
@@ -224,75 +224,75 @@ struct arr
 	double flag;
 };
 //void main(){
-//	//Ê¹ÓÃÔ¤ÉùÃ÷
-//	my.name = "ºÎ´óÏÀ";
+//	//ä½¿ç”¨é¢„å£°æ˜
+//	my.name = "ä½•å¤§ä¾ ";
 //	printf("%s\n", my.name);
-//	my2.name = "ºÎ´óÏÀ2222";
+//	my2.name = "ä½•å¤§ä¾ 2222";
 //	printf("%s\n", my2.name);
-//	//¶¨Òå
-//	struct Man mi = {18,200.0,"Ğ¡Ã÷"};
+//	//å®šä¹‰
+//	struct Man mi = {18,200.0,"å°æ˜"};
 //	printf("%#x----%d\n",&mi,sizeof(mi));
 //	printf("%d\n", mi.age);
-//	//°´Ë³Ğò´æ´¢ÔÚÁ¬ĞøµÄÄÚ´æÖĞ¡£
-//	printf("µØÖ·£º%#x\n", &mi);
-//	printf("µØÖ·£º%#x\n", &mi.weight);
-//	//½á¹¹ÌåÖ¸Õë
+//	//æŒ‰é¡ºåºå­˜å‚¨åœ¨è¿ç»­çš„å†…å­˜ä¸­ã€‚
+//	printf("åœ°å€ï¼š%#x\n", &mi);
+//	printf("åœ°å€ï¼š%#x\n", &mi.weight);
+//	//ç»“æ„ä½“æŒ‡é’ˆ
 //	struct Man *m = &my;
-//	printf("½á¹¹ÌåÖ¸ÕëÈ¡Öµ£º%s\n", (*m).name);
-//	printf("½á¹¹ÌåÖ¸ÕëÈ¡Öµ£º%s\n", m->name);
+//	printf("ç»“æ„ä½“æŒ‡é’ˆå–å€¼ï¼š%s\n", (*m).name);
+//	printf("ç»“æ„ä½“æŒ‡é’ˆå–å€¼ï¼š%s\n", m->name);
 
-//	//ÄäÃû½á¹¹Ìå
-//	xm.name = "Ã÷¸ç";
-//	printf("ÄäÃû£º%s\n", xm.name);
+//	//åŒ¿åç»“æ„ä½“
+//	xm.name = "æ˜å“¥";
+//	printf("åŒ¿åï¼š%s\n", xm.name);
 //     
-//	//ManÀïµÄwife
-//	my = { 18, 200.0, "Ğ¡Ã÷", { "ĞÔ¸ĞÃÀÅ®" } };
+//	//Mané‡Œçš„wife
+//	my = { 18, 200.0, "å°æ˜", { "æ€§æ„Ÿç¾å¥³" } };
 //	printf("%s\n", my.wife.name);
 //
-//	p->wife.name = "Ğ¡ºì";
+//	p->wife.name = "å°çº¢";
 //	printf("%s\n", p->wife.name);
 //
 //
-//	//½á¹¹ÌåÊı×é
+//	//ç»“æ„ä½“æ•°ç»„
 //	struct arr obj[] = { { 11, 11.0 }, { 12, 32.0 }, {22,434.0} }; 
 //	int i = 0;
-//	printf("±äÁ¿Ãû£º%#x",obj);
-//    //·½·¨Ò»£º
+//	printf("å˜é‡åï¼š%#x",obj);
+//    //æ–¹æ³•ä¸€ï¼š
 //	struct arr *a = obj;
-//	//¼Ó3±íÊ¾obj´æ´¢µÄ³¤¶È¡£
+//	//åŠ 3è¡¨ç¤ºobjå­˜å‚¨çš„é•¿åº¦ã€‚
 //	for (; a < (obj +3); a++)
 //	{  
-//		printf("Ö¸ÕëµØÖ·£º%#x---½á¹¹Êı×éµØÖ·£º%#x----%#x\n", &a, &a->index, &a->flag);
-//		printf("½á¹¹Êı×é---%d---%lf\n", a->index, a->flag);
+//		printf("æŒ‡é’ˆåœ°å€ï¼š%#x---ç»“æ„æ•°ç»„åœ°å€ï¼š%#x----%#x\n", &a, &a->index, &a->flag);
+//		printf("ç»“æ„æ•°ç»„---%d---%lf\n", a->index, a->flag);
 //	}
 //
-//	//·½·¨¶ş£º
-//	//objµÄ³¤¶ÈÎÒÃÇ¿ÉÒÔÕâÃ´È¡µÃ£º
+//	//æ–¹æ³•äºŒï¼š
+//	//objçš„é•¿åº¦æˆ‘ä»¬å¯ä»¥è¿™ä¹ˆå–å¾—ï¼š
 //	/*int len = sizeof(obj) / sizeof(struct arr);
 //	for (; i < len; i++){
-//		printf("½á¹¹Êı×é---%d---%lf\n", obj[i].index, obj[i].flag);
+//		printf("ç»“æ„æ•°ç»„---%d---%lf\n", obj[i].index, obj[i].flag);
 //	}*/
 //
-//	//²»ÄÜÕâÃ´ÓÃ
+//	//ä¸èƒ½è¿™ä¹ˆç”¨
 //	//my.xm.name = "aaa";
 //	system("pause");
 //}
 
 
 
-//¶¯Ì¬·ÖÅäºÍ½á¹¹Ìå
+//åŠ¨æ€åˆ†é…å’Œç»“æ„ä½“
 //void main(){
-//		//¶¯Ì¬·ÖÅä
+//		//åŠ¨æ€åˆ†é…
 //		struct Man *p = (struct Man*)malloc(sizeof(struct Man)*10);
 //		p->age = 24;
-//		p->name = "´óÃ÷";
+//		p->name = "å¤§æ˜";
 //		p->weight = 130.0;
 //
 //		p++;
 //
 //		(*p).age = 18;
 //		(*p).weight = 118.0;
-//		(*p).name = "Ğ¡Ã÷";
+//		(*p).name = "å°æ˜";
 //
 //		
 //		p--;
@@ -311,7 +311,7 @@ struct arr
 //		system("pause");
 //}
 
-//½á¹¹Ìå×Ö·û´®
+//ç»“æ„ä½“å­—ç¬¦ä¸²
 struct str{
 	char* name;
 	char title[20];
@@ -319,8 +319,8 @@ struct str{
 
 //void main(){
 //   
-//	ad.name = "ÎÒµÄ¹ã¸æ";
-//	//³ıÉùÃ÷Ê±£¬·ñÔò×Ö·ûÊı×é²»ÄÜÕâÃ´¸³Öµ¡£
+//	ad.name = "æˆ‘çš„å¹¿å‘Š";
+//	//é™¤å£°æ˜æ—¶ï¼Œå¦åˆ™å­—ç¬¦æ•°ç»„ä¸èƒ½è¿™ä¹ˆèµ‹å€¼ã€‚
 //	//ad.title = "see you tomorrow";
 //	strcpy(ad.title,"see you love");
 //
@@ -331,10 +331,10 @@ struct str{
 
 
 
-//½á¹¹ÌåµÄÖ¸Õëº¯Êı
+//ç»“æ„ä½“çš„æŒ‡é’ˆå‡½æ•°
 void open(int num){
 
-	printf("Äã³É¹¦¹ºÂòÁËidÎª%dµÄÉÌÆ·£¡£¡£¡\n", num);
+	printf("ä½ æˆåŠŸè´­ä¹°äº†idä¸º%dçš„å•†å“ï¼ï¼ï¼\n", num);
 }
 
 struct store
@@ -352,7 +352,7 @@ struct store
 //	system("pause");
 //}
 
-//±ğÃûtypedef
+//åˆ«åtypedef
 //typedef int i;
 //
 //typedef struct Man people;
@@ -362,7 +362,7 @@ struct store
 //void main(){
 //
 //	int i = 10;
-//    people p = {12,123.0,"´ó¹·"};
+//    people p = {12,123.0,"å¤§ç‹—"};
 //	who h= &p;
 //	printf("%#x----%d----%lf----%s\n", h, h->age, h->weight, h->name);
 //	system("pause");
@@ -370,7 +370,7 @@ struct store
 
 
 
-//ÁªºÏÌå
+//è”åˆä½“
 
 union MyUnion
 {
@@ -393,7 +393,7 @@ union MyUnion
 
 
 
-//Ã¶¾Ù
+//æšä¸¾
 
 enum day{
 	Monday,
@@ -414,18 +414,18 @@ enum day{
 
 
 
-//¶ÁÈ¡ÎÄ¼ş
+//è¯»å–æ–‡ä»¶
 //void main(){
 //    
 //	char *path = "D:\\Users\\Miss\\BaiduNetdiskDownload\\android\\ndk\\come.txt";
 //	FILE *dir = fopen(path,"r");
 //	if (dir==NULL)
 //	{
-//		printf("´ò¿ªÎÄ¼şÊ§°Ü");
+//		printf("æ‰“å¼€æ–‡ä»¶å¤±è´¥");
 //		return;
 //	}
 //	char buff[50];
-//	//fgets¶ÁÈ¡ÎÄ¼ş×Ö·û´®
+//	//fgetsè¯»å–æ–‡ä»¶å­—ç¬¦ä¸²
 //	while (fgets(buff,50,dir))
 //	{
 //		printf("%s\n",buff);
@@ -436,27 +436,27 @@ enum day{
 
 
 
-//Ğ´ÈëÎÄ¼ş
+//å†™å…¥æ–‡ä»¶
 //void main(){
 //
 //	char *path = "D:\\Users\\Miss\\BaiduNetdiskDownload\\android\\ndk\\temp.txt";
 //	FILE *dir = fopen(path, "w");
 //	if (dir == NULL)
 //	{
-//		printf("´ò¿ªÎÄ¼şÊ§°Ü");
+//		printf("æ‰“å¼€æ–‡ä»¶å¤±è´¥");
 //		return;
 //	}
 //
-//	//\n»»ĞĞ
-//	char *text = "Äã²»ÊÇ¿ÕµÄÂğ£¿£¿\nÎªÉ¶ÓÖÄÚÈİ¡¤¡¤¡¤¡¤";
-//	//»á¸²¸ÇÔ­À´ÄÚÈİ¡£
+//	//\næ¢è¡Œ
+//	char *text = "ä½ ä¸æ˜¯ç©ºçš„å—ï¼Ÿï¼Ÿ\nä¸ºå•¥åˆå†…å®¹Â·Â·Â·Â·";
+//	//ä¼šè¦†ç›–åŸæ¥å†…å®¹ã€‚
 //	fputs(text,dir);
 //	fclose(dir);
-//	printf("Ğ´Èë³É¹¦\n");
+//	printf("å†™å…¥æˆåŠŸ\n");
 //	system("pause");
 //}
 
-//¸´ÖÆ¶ş½øÖÆÎÄ¼ş
+//å¤åˆ¶äºŒè¿›åˆ¶æ–‡ä»¶
 
 //void main(){
 //	char *path = "D:\\Users\\Miss\\BaiduNetdiskDownload\\android\\ndk\\picture.png";
@@ -467,7 +467,7 @@ enum day{
 //
 //	if (picture == NULL&&copy_picture==NULL)
 //	{
-//		printf("´ò¿ªÎÄ¼şÊ§°Ü");
+//		printf("æ‰“å¼€æ–‡ä»¶å¤±è´¥");
 //		return;
 //	}
 //
@@ -480,30 +480,30 @@ enum day{
 //
 //	fclose(picture);
 //	fclose(copy_picture);
-//	printf("¸´ÖÆÍ¼Æ¬³É¹¦\n");
+//	printf("å¤åˆ¶å›¾ç‰‡æˆåŠŸ\n");
 //	system("pause");
 //}
 
 
 
-//»ñÈ¡ÎÄ¼ş´óĞ¡
+//è·å–æ–‡ä»¶å¤§å°
 //void main(){
 //
 //	char *path = "D:\\Users\\Miss\\BaiduNetdiskDownload\\android\\ndk\\come.txt";
 //	FILE *dir = fopen(path,"r");
 //
-//	//fseek´ÓĞÂ¶¨Î»ÎÄ¼şÖ¸Õë,0ÎªÆ«ÒÆÁ¿£¬ÕâÀïÊÇ´Ó¿ªÊ¼µ½Ä©Î²¡£
+//	//fseekä»æ–°å®šä½æ–‡ä»¶æŒ‡é’ˆ,0ä¸ºåç§»é‡ï¼Œè¿™é‡Œæ˜¯ä»å¼€å§‹åˆ°æœ«å°¾ã€‚
 //	fseek(dir,0,SEEK_END);
 //
-//	//ftell,»ñµÃnum2-num1µÄ´óĞ¡£¬¼´ÎÄ¼ş´óĞ¡£¨fseek£¨£¬num1£¬num2£©)
+//	//ftell,è·å¾—num2-num1çš„å¤§å°ï¼Œå³æ–‡ä»¶å¤§å°ï¼ˆfseekï¼ˆï¼Œnum1ï¼Œnum2ï¼‰)
 //	long size = ftell(dir);
-//	printf("ÎÄ¼ş´óĞ¡Îª%d\n",size);
+//	printf("æ–‡ä»¶å¤§å°ä¸º%d\n",size);
 //	system("pause");
 //
 //}
 
 
-//ÑéÖ¤ÎÄ¼ş´ò¿ªÊÇ·ñ³É¹¦
+//éªŒè¯æ–‡ä»¶æ‰“å¼€æ˜¯å¦æˆåŠŸ
 bool isOpen(FILE *path){
 	if (path != NULL)
 	{
@@ -517,7 +517,7 @@ bool isOpen(FILE *path){
 
 
 
-//byteÎÄ¼şµÄ¼ÓÃÜ
+//byteæ–‡ä»¶çš„åŠ å¯†
 
 void crypt(char normal_path[], char *crypt_path){
 	FILE *normal_p = fopen(normal_path, "r");
@@ -526,15 +526,15 @@ void crypt(char normal_path[], char *crypt_path){
 
 	if (normal_p == NULL&&crypt_p == NULL)
 	{
-		printf("´ò¿ªÎÄ¼şÊ§°Ü");
+		printf("æ‰“å¼€æ–‡ä»¶å¤±è´¥");
 		return;
 	}
 
 	int ch = 0;
-	//EOF½áÎ²±êÊ¶·û
+	//EOFç»“å°¾æ ‡è¯†ç¬¦
 	while ((ch = fgetc(normal_p)) != EOF)
 	{
-		//¼ÓÃÜ»ò½âÃÜ^8
+		//åŠ å¯†æˆ–è§£å¯†^8
 		fputc(ch ^ 8, crypt_p);
 	}
 
@@ -553,11 +553,11 @@ void crypt(char normal_path[], char *crypt_path){
 //}
 
 /*
-cÓïÑÔÖ´ĞĞÁ÷³Ì
-Ô¤±àÒë---Íê³ÉÎÄ±¾µÄÌæ»»
-±àÒë---ĞÎ³É.objÎÄ¼ş
-Á¬½Ó---½«Ä¿±ê´úÂëÓëcº¯Êı¿âÁ¬½ÓºÏ²¢¡£
-×îºóÖ´ĞĞ¡£
+cè¯­è¨€æ‰§è¡Œæµç¨‹
+é¢„ç¼–è¯‘---å®Œæˆæ–‡æœ¬çš„æ›¿æ¢
+ç¼–è¯‘---å½¢æˆ.objæ–‡ä»¶
+è¿æ¥---å°†ç›®æ ‡ä»£ç ä¸cå‡½æ•°åº“è¿æ¥åˆå¹¶ã€‚
+æœ€åæ‰§è¡Œã€‚
 */
 
 
