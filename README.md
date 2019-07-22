@@ -1,2 +1,5 @@
 # c-language
-学习c 语言，记录的基本用法与一些坑
+
+## base-kills-----c语言的一些基本用法
+
+## splitFile -----用fopen/fgets写的纯中文文件分割demo
