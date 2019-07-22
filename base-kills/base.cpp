@@ -70,7 +70,30 @@ int msg3(void(*fun)(char*), char* str, int content){
 //
 //}
 
+//常量指针
+void main(){
 
+	//常量指针
+	int i = 100;
+	int j = 200;
+	const int* p = &i;
+	//不能修改其存储地址对应的内容，
+	//(*p) = 10;  //报错
+	//可以修改自己存储的地址
+	printf("%d\n", *p);
+	p = &j;
+	printf("%d\n",*p);
+
+	//指针常量
+	int* const h = &i;
+	//可以修改其存储地址对应的内容，
+	(*h) = 10;
+	//不可以修改自己存储的地址
+        //h = &j;//报错
+	printf("%d\n",*h);
+
+	system("pause");
+}
 
 //动态分配
 //堆分配
