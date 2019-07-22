@@ -363,6 +363,10 @@ struct store
 // typedef int* func1;//定义int类型的指针别名func1
 // typedef int** PFun(int, char*);//定义int类型的二级指针
 
+void fun1(){
+	printf("fun1......\n");
+}
+
 //void main(){
 //
 //	i j = 10;
